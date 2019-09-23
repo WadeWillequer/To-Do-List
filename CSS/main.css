@@ -1,3 +1,55 @@
 body {
-    background-color: red;
+    background-color: rgba(212, 226, 255, 0.671);
+    text-align: center;
+    font-family: 'Merienda', cursive;
+}
+
+h1 {
+    color: rgb(81, 40, 134);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+
+/* Rules for the three paragraphs containing the instructions for the To-do list */
+
+#instruction1{
+    color:#173186d0;
+}
+
+#instruction2{
+    color:#7e8617d0;
+}
+
+#instruction3{
+    color:#861720d0;
+}
+
+/* Styles for the input element used to add a new To-do */
+
+input {
+    min-width: 65% /* This element's width must be at least 65% of the width of the container */
+
+}
+
+/* Styles for the submit button */
+
+#submit {
+    background-color: rgb(0, 174, 255);
+    border: none;
+    /* Allows us to add a delay before the animation starts */
+    transition-delay: 1s;
+    /* allows us to control how long the animation takes */
+    transition-duration: 1s;
+    /* allows us to specify what property will be animated for the transition */
+    transition-property: background-color;
+    /* Allows us to modify the speed of the animation such as starting out slow then speeding up */
+    transition-timing-function: ease-in-out;
+
+    transition: background-color 1.5s 1s; /* we can use shorthand to specify all of the transition properties in one line- property, duration, timing-function, delay */
+}
+
+#submit:hover {
+    background-color: rgb(50, 139, 180);
 }
