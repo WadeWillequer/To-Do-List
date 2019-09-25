@@ -53,3 +53,54 @@ input {
 #submit:hover {
     background-color: rgb(50, 139, 180);
 }
+
+/* styles for the UL and lis */
+
+ul {
+    margin-top: 20px;
+    text-align: left;
+}
+
+li {
+    list-style: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: purple;
+    background-color: white;
+    font-weight: bold;
+
+    transition: all 0.75s ease;
+    /* webkit for safari and Opera */
+    -webkit-transition: all 0.75s ease;
+    /* Mozilla, for firefox */
+    -moz-transition: all 0.75s ease;
+    /* Opera */
+    -o-transition: all 0.75s ease;
+}
+
+li:hover {
+    background-color: rgba(110, 168, 21, 0.644)
+}
+
+/* styles for when a list is marked done */
+
+.done {
+    background-color: rgba(110, 168, 21, 0.644) !important;
+}
+
+/* Styles for when a list item is deleted */
+.delete {
+    display: none;
+}
+
+/* styles for the delete button inside list items */
+
+/* target any buttons whose parent element is a list item */
+li > button {
+    float: right;
+    border: none;
+    background: none;
+    color: purple;
+}
